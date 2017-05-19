@@ -243,7 +243,7 @@ open class TextContentNode: ContentNode,ASTextNodeDelegate {
      Implementing shouldLongPressLinkAttribute - returning true for both link and phone numbers
      */
     //open func textNode(_ textNode: ASTextNode, shouldLongPressLinkAttribute attribute: String, value: AnyObject, at point: CGPoint) -> Bool {
-    public func textNode(_ textNode: ASTextNode, shouldLongPressLinkAttribute attribute: String, value: Any, at point: CGPoint) -> Bool {
+    open func textNode(_ textNode: ASTextNode, shouldLongPressLinkAttribute attribute: String, value: Any, at point: CGPoint) -> Bool {
         if attribute == "LinkAttribute"
         {
             return true
