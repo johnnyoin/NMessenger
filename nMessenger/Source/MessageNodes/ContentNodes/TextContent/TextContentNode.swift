@@ -407,7 +407,7 @@ open class TextContentNode: ContentNode,ASTextNodeDelegate {
                 becomeFirstResponder()
                 delay(0.1, closure: {
                     let menuController = UIMenuController.shared
-                    menuController.menuItems = [UIMenuItem(title: "Copy", action: #selector(TextContentNode.copySelector))]
+                    menuController.menuItems = [UIMenuItem(title: NSLocalizedString("Copy", tableName: "NMessengerLocalizable", bundle: Bundle(for: NMessengerViewController.self), value: "", comment: ""), action: #selector(TextContentNode.copySelector))]
                     menuController.setTargetRect(self.textMessageNode.frame, in: self.view)
                     menuController.setMenuVisible(true, animated:true)
                 })

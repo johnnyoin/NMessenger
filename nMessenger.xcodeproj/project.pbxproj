@@ -20,6 +20,7 @@
 		19F4C1311D6CF4C00044E340 /* BubbleConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4C12F1D6CF4C00044E340 /* BubbleConfigurationTests.swift */; };
 		19F4C1321D6CF4C00044E340 /* MessageNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4C1301D6CF4C00044E340 /* MessageNodeTests.swift */; };
 		37F1F229A5398DD920B9CA7A /* Pods_nMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118604259124D3DC9BCBA458 /* Pods_nMessenger.framework */; };
+		3F2A63B81ECF42D70092C2A3 /* NMessengerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F2A63BA1ECF42D70092C2A3 /* NMessengerLocalizable.strings */; };
 		616280281D8196F700D1F510 /* nMessenger-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 616280271D8196F700D1F510 /* nMessenger-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		616280321D81978000D1F510 /* NMessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC87391D63813700F3C21C /* NMessengerViewController.swift */; };
 		616280331D8197AD00D1F510 /* NMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC87381D63813700F3C21C /* NMessenger.swift */; };
@@ -395,6 +396,8 @@
 		19F4C12C1D6CF4550044E340 /* UIFontTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontTests.swift; sourceTree = "<group>"; };
 		19F4C12F1D6CF4C00044E340 /* BubbleConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleConfigurationTests.swift; sourceTree = "<group>"; };
 		19F4C1301D6CF4C00044E340 /* MessageNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageNodeTests.swift; sourceTree = "<group>"; };
+		3F2A63B91ECF42D70092C2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/NMessengerLocalizable.strings; sourceTree = "<group>"; };
+		3F2A63BB1ECF42E30092C2A3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/NMessengerLocalizable.strings; sourceTree = "<group>"; };
 		5015DB82C8FC66A862A52EA0 /* Pods-nMessengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nMessengerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nMessengerTests/Pods-nMessengerTests.release.xcconfig"; sourceTree = "<group>"; };
 		616280251D8196F700D1F510 /* NMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		616280271D8196F700D1F510 /* nMessenger-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nMessenger-iOS.h"; sourceTree = "<group>"; };
@@ -737,6 +740,7 @@
 				F1FC87321D63813700F3C21C /* Messenger */,
 				F1418CE61D380B2400C404B5 /* AppDelegate.swift */,
 				F1418CE81D380B2400C404B5 /* ViewController.swift */,
+				3F2A63BA1ECF42D70092C2A3 /* NMessengerLocalizable.strings */,
 				F1418CEA1D380B2400C404B5 /* Main.storyboard */,
 				F1418CED1D380B2400C404B5 /* Assets.xcassets */,
 				F1418CEF1D380B2400C404B5 /* LaunchScreen.storyboard */,
@@ -1250,6 +1254,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = F1418CDA1D380B2400C404B5;
 			productRefGroup = F1418CE41D380B2400C404B5 /* Products */;
@@ -1470,6 +1475,7 @@
 				F1E73C521D760B8300E61960 /* shutterBtn.png in Resources */,
 				F1FC87471D63813700F3C21C /* loadBubble_0006_Layer-33@1x.png in Resources */,
 				F1FC87A21D63813700F3C21C /* loadBubble_0019_Layer-20@3x.png in Resources */,
+				3F2A63B81ECF42D70092C2A3 /* NMessengerLocalizable.strings in Resources */,
 				F1FC87AC1D63813700F3C21C /* loadBubble_0029_Layer-10@3x.png in Resources */,
 				F1E73C531D760B8300E61960 /* shutterBtn@2x.png in Resources */,
 				F1FC87771D63813700F3C21C /* loadBubble_0015_Layer-24@2x.png in Resources */,
@@ -1857,6 +1863,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3F2A63BA1ECF42D70092C2A3 /* NMessengerLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2A63B91ECF42D70092C2A3 /* Base */,
+				3F2A63BB1ECF42E30092C2A3 /* fr */,
+			);
+			name = NMessengerLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		F1418CEA1D380B2400C404B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1934,6 +1949,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1982,6 +1998,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
