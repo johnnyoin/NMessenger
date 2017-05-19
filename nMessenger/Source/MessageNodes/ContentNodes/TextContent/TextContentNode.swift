@@ -233,7 +233,9 @@ open class TextContentNode: ContentNode,ASTextNodeDelegate {
         else if attribute == "PhoneNumberAttribute"
         {
             let phoneNumber = value as! String
-            UIApplication.shared.openURL(URL(string: "tel://\(phoneNumber)")!)
+            if let url = URL(string: "tel://\(phoneNumber.replacingOccurrences(of: " ", with: ""))") {
+              UIApplication.shared.openURL(url)
+            }
         }
     }
     
